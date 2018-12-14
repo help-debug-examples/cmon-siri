@@ -7,14 +7,21 @@
 //
 
 import UIKit
+import Intents
 
 class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        // Donate an intent
+        let item = "Shampoo"
+        let quantity = 5
+        let intent = AmazonOrderIntent()
+        intent.item = item
+        intent.quantity = NSNumber(value: quantity)
+        let interaction = INInteraction(intent: intent, response: nil)
+        interaction.donate(completion: nil)
     }
-
-
 }
 

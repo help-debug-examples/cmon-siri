@@ -14,6 +14,16 @@
 		E70211B821C43D0000E56C6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E70211B621C43D0000E56C6E /* LaunchScreen.storyboard */; };
 		E70211C321C43D0000E56C6E /* CmonSiriTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70211C221C43D0000E56C6E /* CmonSiriTests.swift */; };
 		E70211CE21C43D0000E56C6E /* CmonSiriUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70211CD21C43D0000E56C6E /* CmonSiriUITests.swift */; };
+		E702120A21C445C900E56C6E /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = E702120921C445C900E56C6E /* Intents.intentdefinition */; };
+		E740947A21C44BFE006B1351 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E70211ED21C43EFC00E56C6E /* IntentsUI.framework */; };
+		E740947D21C44BFE006B1351 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E740947C21C44BFE006B1351 /* IntentViewController.swift */; };
+		E740948021C44BFE006B1351 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E740947E21C44BFE006B1351 /* MainInterface.storyboard */; };
+		E740948421C44BFE006B1351 /* CmonSiriIntentUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E740947921C44BFE006B1351 /* CmonSiriIntentUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E740948721C44BFE006B1351 /* CmonSiriIntent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E740947021C44BFD006B1351 /* CmonSiriIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E740948F21C44C5C006B1351 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E740948E21C44C5C006B1351 /* IntentHandler.swift */; };
+		E740949121C45339006B1351 /* AmazonOrderIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E740949021C45339006B1351 /* AmazonOrderIntentHandler.swift */; };
+		E740949221C45403006B1351 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = E702120921C445C900E56C6E /* Intents.intentdefinition */; };
+		E740949321C45403006B1351 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = E702120921C445C900E56C6E /* Intents.intentdefinition */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +41,36 @@
 			remoteGlobalIDString = E70211A921C43CFD00E56C6E;
 			remoteInfo = CmonSiri;
 		};
+		E740948221C44BFE006B1351 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E70211A221C43CFD00E56C6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E740947821C44BFE006B1351;
+			remoteInfo = CmonSiriIntentUI;
+		};
+		E740948521C44BFE006B1351 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E70211A221C43CFD00E56C6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E740946F21C44BFD006B1351;
+			remoteInfo = CmonSiriIntent;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E702120221C43EFC00E56C6E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E740948721C44BFE006B1351 /* CmonSiriIntent.appex in Embed App Extensions */,
+				E740948421C44BFE006B1351 /* CmonSiriIntentUI.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E70211AA21C43CFD00E56C6E /* CmonSiri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CmonSiri.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +86,17 @@
 		E70211C921C43D0000E56C6E /* CmonSiriUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CmonSiriUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E70211CD21C43D0000E56C6E /* CmonSiriUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CmonSiriUITests.swift; sourceTree = "<group>"; };
 		E70211CF21C43D0000E56C6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E70211DD21C43E9F00E56C6E /* CmonSiri.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CmonSiri.entitlements; sourceTree = "<group>"; };
+		E70211ED21C43EFC00E56C6E /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		E702120921C445C900E56C6E /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		E740947021C44BFD006B1351 /* CmonSiriIntent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CmonSiriIntent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E740947421C44BFE006B1351 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E740947921C44BFE006B1351 /* CmonSiriIntentUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CmonSiriIntentUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E740947C21C44BFE006B1351 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		E740947F21C44BFE006B1351 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		E740948121C44BFE006B1351 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E740948E21C44C5C006B1351 /* IntentHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		E740949021C45339006B1351 /* AmazonOrderIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmazonOrderIntentHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +121,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E740946D21C44BFD006B1351 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E740947621C44BFE006B1351 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E740947A21C44BFE006B1351 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +145,9 @@
 				E70211AC21C43CFD00E56C6E /* CmonSiri */,
 				E70211C121C43D0000E56C6E /* CmonSiriTests */,
 				E70211CC21C43D0000E56C6E /* CmonSiriUITests */,
+				E740947121C44BFD006B1351 /* CmonSiriIntent */,
+				E740947B21C44BFE006B1351 /* CmonSiriIntentUI */,
+				E70211EC21C43EFC00E56C6E /* Frameworks */,
 				E70211AB21C43CFD00E56C6E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +158,8 @@
 				E70211AA21C43CFD00E56C6E /* CmonSiri.app */,
 				E70211BE21C43D0000E56C6E /* CmonSiriTests.xctest */,
 				E70211C921C43D0000E56C6E /* CmonSiriUITests.xctest */,
+				E740947021C44BFD006B1351 /* CmonSiriIntent.appex */,
+				E740947921C44BFE006B1351 /* CmonSiriIntentUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,10 +205,40 @@
 			isa = PBXGroup;
 			children = (
 				E70211B921C43D0000E56C6E /* Info.plist */,
+				E70211DD21C43E9F00E56C6E /* CmonSiri.entitlements */,
+				E702120921C445C900E56C6E /* Intents.intentdefinition */,
 				E70211B621C43D0000E56C6E /* LaunchScreen.storyboard */,
 				E70211B421C43D0000E56C6E /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		E70211EC21C43EFC00E56C6E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E70211ED21C43EFC00E56C6E /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E740947121C44BFD006B1351 /* CmonSiriIntent */ = {
+			isa = PBXGroup;
+			children = (
+				E740949021C45339006B1351 /* AmazonOrderIntentHandler.swift */,
+				E740948E21C44C5C006B1351 /* IntentHandler.swift */,
+				E740947421C44BFE006B1351 /* Info.plist */,
+			);
+			path = CmonSiriIntent;
+			sourceTree = "<group>";
+		};
+		E740947B21C44BFE006B1351 /* CmonSiriIntentUI */ = {
+			isa = PBXGroup;
+			children = (
+				E740947C21C44BFE006B1351 /* IntentViewController.swift */,
+				E740947E21C44BFE006B1351 /* MainInterface.storyboard */,
+				E740948121C44BFE006B1351 /* Info.plist */,
+			);
+			path = CmonSiriIntentUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,10 +251,13 @@
 				E70211A621C43CFD00E56C6E /* Sources */,
 				E70211A721C43CFD00E56C6E /* Frameworks */,
 				E70211A821C43CFD00E56C6E /* Resources */,
+				E702120221C43EFC00E56C6E /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E740948321C44BFE006B1351 /* PBXTargetDependency */,
+				E740948621C44BFE006B1351 /* PBXTargetDependency */,
 			);
 			name = CmonSiri;
 			productName = CmonSiri;
@@ -197,6 +300,40 @@
 			productReference = E70211C921C43D0000E56C6E /* CmonSiriUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		E740946F21C44BFD006B1351 /* CmonSiriIntent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E740948B21C44BFE006B1351 /* Build configuration list for PBXNativeTarget "CmonSiriIntent" */;
+			buildPhases = (
+				E740946C21C44BFD006B1351 /* Sources */,
+				E740946D21C44BFD006B1351 /* Frameworks */,
+				E740946E21C44BFD006B1351 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CmonSiriIntent;
+			productName = CmonSiriIntent;
+			productReference = E740947021C44BFD006B1351 /* CmonSiriIntent.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		E740947821C44BFE006B1351 /* CmonSiriIntentUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E740948821C44BFE006B1351 /* Build configuration list for PBXNativeTarget "CmonSiriIntentUI" */;
+			buildPhases = (
+				E740947521C44BFE006B1351 /* Sources */,
+				E740947621C44BFE006B1351 /* Frameworks */,
+				E740947721C44BFE006B1351 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CmonSiriIntentUI;
+			productName = CmonSiriIntentUI;
+			productReference = E740947921C44BFE006B1351 /* CmonSiriIntentUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -209,6 +346,11 @@
 				TargetAttributes = {
 					E70211A921C43CFD00E56C6E = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
 					};
 					E70211BD21C43D0000E56C6E = {
 						CreatedOnToolsVersion = 10.1;
@@ -217,6 +359,13 @@
 					E70211C821C43D0000E56C6E = {
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = E70211A921C43CFD00E56C6E;
+					};
+					E740946F21C44BFD006B1351 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					E740947821C44BFE006B1351 = {
+						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
@@ -236,6 +385,8 @@
 				E70211A921C43CFD00E56C6E /* CmonSiri */,
 				E70211BD21C43D0000E56C6E /* CmonSiriTests */,
 				E70211C821C43D0000E56C6E /* CmonSiriUITests */,
+				E740946F21C44BFD006B1351 /* CmonSiriIntent */,
+				E740947821C44BFE006B1351 /* CmonSiriIntentUI */,
 			);
 		};
 /* End PBXProject section */
@@ -265,6 +416,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E740946E21C44BFD006B1351 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E740947721C44BFE006B1351 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E740948021C44BFE006B1351 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -272,6 +438,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E702120A21C445C900E56C6E /* Intents.intentdefinition in Sources */,
 				E70211B021C43CFD00E56C6E /* MainViewController.swift in Sources */,
 				E70211AE21C43CFD00E56C6E /* AppDelegate.swift in Sources */,
 			);
@@ -293,6 +460,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E740946C21C44BFD006B1351 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E740949221C45403006B1351 /* Intents.intentdefinition in Sources */,
+				E740948F21C44C5C006B1351 /* IntentHandler.swift in Sources */,
+				E740949121C45339006B1351 /* AmazonOrderIntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E740947521C44BFE006B1351 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E740949321C45403006B1351 /* Intents.intentdefinition in Sources */,
+				E740947D21C44BFE006B1351 /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -305,6 +491,16 @@
 			isa = PBXTargetDependency;
 			target = E70211A921C43CFD00E56C6E /* CmonSiri */;
 			targetProxy = E70211CA21C43D0000E56C6E /* PBXContainerItemProxy */;
+		};
+		E740948321C44BFE006B1351 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E740947821C44BFE006B1351 /* CmonSiriIntentUI */;
+			targetProxy = E740948221C44BFE006B1351 /* PBXContainerItemProxy */;
+		};
+		E740948621C44BFE006B1351 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E740946F21C44BFD006B1351 /* CmonSiriIntent */;
+			targetProxy = E740948521C44BFE006B1351 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -323,6 +519,14 @@
 				E70211B721C43D0000E56C6E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E740947E21C44BFE006B1351 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E740947F21C44BFE006B1351 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -447,7 +651,9 @@
 		E70211D321C43D0000E56C6E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CmonSiri/CmonSiri.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DJPFLH48H5;
 				INFOPLIST_FILE = "$(SRCROOT)/CmonSiri/Resources/Info.plist";
@@ -465,7 +671,9 @@
 		E70211D421C43D0000E56C6E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CmonSiri/CmonSiri.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DJPFLH48H5;
 				INFOPLIST_FILE = "$(SRCROOT)/CmonSiri/Resources/Info.plist";
@@ -562,6 +770,85 @@
 			};
 			name = Release;
 		};
+		E740948921C44BFE006B1351 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DJPFLH48H5;
+				INFOPLIST_FILE = CmonSiriIntentUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.derrickshowers.CmonSiri.CmonSiriIntentUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E740948A21C44BFE006B1351 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DJPFLH48H5;
+				INFOPLIST_FILE = CmonSiriIntentUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.derrickshowers.CmonSiri.CmonSiriIntentUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E740948C21C44BFE006B1351 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DJPFLH48H5;
+				INFOPLIST_FILE = CmonSiriIntent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.derrickshowers.CmonSiri.CmonSiriIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E740948D21C44BFE006B1351 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DJPFLH48H5;
+				INFOPLIST_FILE = CmonSiriIntent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.derrickshowers.CmonSiri.CmonSiriIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -597,6 +884,24 @@
 			buildConfigurations = (
 				E70211D921C43D0000E56C6E /* Debug */,
 				E70211DA21C43D0000E56C6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E740948821C44BFE006B1351 /* Build configuration list for PBXNativeTarget "CmonSiriIntentUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E740948921C44BFE006B1351 /* Debug */,
+				E740948A21C44BFE006B1351 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E740948B21C44BFE006B1351 /* Build configuration list for PBXNativeTarget "CmonSiriIntent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E740948C21C44BFE006B1351 /* Debug */,
+				E740948D21C44BFE006B1351 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
